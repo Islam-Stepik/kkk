@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html id="" style="overflow: visible !important;">
+<head>
+  <meta charset="utf-8">
+  <title>keinmakler.at — Provisionsfreie Privatimmobilien Gratis Inserieren, Mieten &amp; Kaufen</title>
+  <meta name="language" content="de">
+  <meta name="keywords" content="provisionsfrei, immobilien, kostenlos inserieren, wohnung, haus, wohnungssuche, mietwohnungen, eigentumswohnungen, miethäuser, eigentumshäuser">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="fb:admins" content="">
+  <meta property="og:title" content="keinmakler.at">
+  <meta property="og:description" content="Marktplatz für provisionsfreie Immobilien. Gratis inserieren. Direkt Kontakt zum Anbieter. Ohne Makler Provision. Alles auf einen Blick. Stöbern nach Bildern. Keine Werbebanner.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://keinmakler.at">
+  <meta property="og:image" content="https://keinmakler.at/assets/shareimage.jpg">
+  <meta property="og:image:secure_url" content="https://keinmakler.at/assets/shareimage.jpg">
+  <meta property="og:site_name" content="keinmakler.at">
+  <meta content="authenticity_token" name="csrf-param">
+  <meta content="OzyQB3T/7NIeoUvoFcn9KLeS+gjqBt/xvb7sJ5pfKkA=" name="csrf-token">
+  <link href="/assets/application-3cc4aaf0c70a8e5a8e63c593ecddad9b.css" media="all" rel="stylesheet" type="text/css">
+  <script src="/assets/application-70773a69ccde115401101fab130d7376.js" type="text/javascript"></script>
+  <link href="/assets/favicon-3be2e1f8448867cd3c213e4380d55574.png" rel="shortcut icon" type="image/vnd.microsoft.icon">
+  <link href="/assets/realty_search/no-results-9ed2918137671f4c5baaa021b78ce87b.css" media="screen" rel="stylesheet" type="text/css">
+  <script src="/assets/realty_search/search_for_realties-252830bbcdd749493b053c76de2e1033.js" type="text/javascript"></script>
+  <script type="text/javascript">
+         try{
+                 setClientCountry('AT','Österreich');
+        
+                 setTimeout(function(){
+                        if(top != self) top.location.replace(location);
+                 }, 5000);
+         } catch (error) {}
+  </script>
+  <script>
+          (function(d) {
+            var config = {
+              kitId: 'wob1fnr',
+              scriptTimeout: 3000,
+              async: true
+            },
+            h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+          })(document);
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places,geometry&language=de&key=AIzaSyB4WtHbjUhyzBIRYYs2-FbXHZHpSZe9loM"></script>
+</head>
+<body onunload="" class="realties-index list-visible">
+  <div id="flash-notice-container-wrapper" class="clearfix" style="display:none;">
+    <table>
+      <tr>
+        <td class="text"></td>
+        <td width="50px">
+          <a href="javascript:void(0);" class="close-message-link">X</a>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <script type="text/javascript"></script>
+  <div style="display: none;">
+    <div id="message-send-feedback" class="fancybox-message">
+      <div class="text">
+        <h2 class="main-headline">Danke für dein Feedback!</h2>
+      </div>
+      <form action="">
+        <div style="display:none;">
+          <input id="honey_pot" name="honey_pot" type="text">
+        </div>
+        <textarea cols="40" id="feedback-body" name="body" placeholder="Anregung, Problem, Frage, Lob/Kritik..." rows="10"></textarea> <input class="input" id="feedback-email" name="email" placeholder="Deine E-Mail-Adresse" type="text" value=""> <a href="javascript:void(0);" class="disabled btn green">Senden</a>
+        <div class="load-realties-animation" style="display:none;"></div>
+      </form>
+    </div>
+    <script type="text/javascript">
+                                $(document).ready(function() {
+                                        $("#feedback-body, #feedback-email").keyup(function() {
+                                                ($("#feedback-body").val() == "" || $("#feedback-email").val() == "") ? $("#message-send-feedback .btn").addClass("disabled") : $("#message-send-feedback .btn").removeClass("disabled");
+                                        });
+                                        $("#message-send-feedback .btn").click(function() {
+                                                if ($('#honey_pot').val() != "" || $('#feedback-body').val() == "" || $('#feedback-email').val() == "")
+                                                        return;
+
+                                                $("#message-send-feedback .btn").hide();
+                                                $("#message-send-feedback .btn").next(".load-realties-animation").show();
+                                                $.post("/mails/feedback_email", { body: $('#feedback-body').val(), email: $('#feedback-email').val(), browser: getBrowserInfo() });
+                                        });
+                                });
+    </script>
+  </div><a href="#message-send-feedback" class="feedback-btn fancybox-link">Feedback</a> <span id="search-profile-loader" class="dnone"></span> <span id="search-profile-message" style="display:none;">Suche gespeichert</span>
+  <div class="header-wrap">
+    <a href="/" id="logobox"></a>
+    <div class="searchprofile-link-wrap m-hide">
+      <a href="javascript:void(0)" class="searchprofile-link open"></a>
+    </div>
+    <div id="header" class="clearfix">
+      <div id="detail-navi" class="m-hide"></div>
+      <div class="mobile-nav-link m-show">
+        <div class="layover-wrapper dropdown about-dropdown-menu">
+          <div class="layover clearfix">
+            <div>
+              <a href="/#about" class="none">Warum keinmakler.at?</a> <a href="/fragen-antworten" class="none">Fragen &amp; Antworten</a> <a href="/newsletter/subscribe" class="none">Newsletter</a>
+              <div class="bottom-area">
+                <ul>
+                  <li><span></span>Facebook</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div><a href="/registrieren" class="login-link header-link register-btn">Registrieren</a> <a href="/einloggen" class="login-link header-link">Login</a>
+      </div>
+      <div id="main-navi-mobile">
+        <ul>
+          <li>
+            <a href="javascript:void(0);" class="icon-pencil open-new-realty-dropdown" id="new-realty-btn">Gratis inserieren!</a>
+            <div class="new-realty-dropdown" style="display:none">
+              <div class="dropdown-inner">
+                <div class="col">
+                  <h3>zu vermieten</h3>
+                  <ul>
+                    <li>
+                      <a href="/kostenlos-inserieren/Wohnung%20(Miete)">Wohnung</a>
+                    </li>
+                    <li>
+                      <a href="/kostenlos-inserieren/Haus%20(Miete)">Haus</a>
+                    </li>
+                    <li class="business-tooltip">
+                      <a href="/kostenlos-inserieren/Gewerbeimmobilie%20(Miete)">Gewerbeimmobilie</a>
+                    </li>
+                    <li>
+                      <a href="/kostenlos-inserieren/WG-Zimmer%20(Miete)">WG-Zimmer</a>
+                    </li>
+                    <li>
+                      <a href="/kostenlos-inserieren/Sonstiges%20(Miete)">Sonstiges</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3>zu verkaufen</h3>
+                  <ul>
+                    <li>
+                      <a href="/kostenlos-inserieren/Wohnung%20(Kauf)">Wohnung</a>
+                    </li>
+                    <li>
+                      <a href="/kostenlos-inserieren/Haus%20(Kauf)">Haus</a>
+                    </li>
+                    <li class="business-tooltip">
+                      <a href="/kostenlos-inserieren/Gewerbeimmobilie%20(Kauf)">Gewerbeimmobilie</a>
+                    </li>
+                    <li>
+                      <a href="/kostenlos-inserieren/Grundst%C3%BCck%20(Kauf)">Grundstück</a>
+                    </li>
+                    <li>
+                      <a href="/kostenlos-inserieren/Sonstiges%20(Kauf)">Sonstiges</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+            <script>
+                                                $(document).ready(function() {
+                                                        $("#main-navi-mobile .open-new-realty-dropdown").click(function() {
+                                                                $("#main-navi-mobile .new-realty-dropdown").toggle();
+                                                        });
+                                                        $("#main-navi-mobile .new-realty-dropdown").click(function() {
+                                                                $(this).toggle();
+                                                        });
+
+                                                        $("body").click(function(e) {
+                                                                if ($(e.target).closest($("#main-navi-mobile .open-new-realty-dropdown")).length)
+                                                                        return;
+                                                                if (!$(e.target).closest($("#main-navi-mobile .new-realty-dropdown")).length)
+                                                                        $("#main-navi-mobile .new-realty-dropdown").hide();
+                                                        });
+                                                });
+            </script>
+          </li>
+          <li>
+            <a href="/merkliste" class="icon-star"><span>Merkliste</span> <span class="watch-list-count"></span></a>
+          </li>
+          <li class="about-link-area layover-active-area">
+            <a href="javascript:void(0);" class="icon-menu about-dropdown-link">Über keinmakler.at</a>
+            <div class="layover-wrapper dropdown about-dropdown-menu">
+              <div class="layover clearfix">
+                <div>
+                  <a href="/#about" class="none">Warum keinmakler.at?</a> <a href="/fragen-antworten" class="none">Fragen &amp; Antworten</a> <a href="/newsletter/subscribe" class="none">Newsletter</a>
+                  <div class="bottom-area">
+                    <ul>
+                      <li><span></span>Facebook</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="/maklergeschichten" class="realtor-stories-link">Maklergeschichten</a>
+          </li>
+          <li>
+            <a href="/einloggen" class="icon-person">Login</a>
+          </li>
+          <li>
+            <a href="/registrieren" class="icon-add-person">Registrieren</a>
+          </li>
+        </ul>
+      </div>
+      <div id="main-navi" class="mobile-hide">
+        <a href="javascript:void(0);" class="header-link icon-pencil new-realty-btn open-new-realty-dropdown" id="new-realty-btn">Gratis inserieren!</a> 
+        <script>
+
+
+        $(document).ready(function() {
+          $("#main-navi .open-new-realty-dropdown").click(function() {
+            $("#main-navi .new-realty-dropdown").toggle();
+          });
+          $("body").click(function(e) {
+            if ($(e.target).closest($("#main-navi .open-new-realty-dropdown")).length)
+              return;
+            if (!$(e.target).closest($("#main-navi .new-realty-dropdown")).length)
+              $("#main-navi .new-realty-dropdown").hide();
+          });
+        });
+        </script>
+        <div class="new-realty-dropdown" style="display:none">
+          <div class="dropdown-inner">
+            <div class="col">
+              <h3>zu vermieten</h3>
+              <ul>
+                <li>
+                  <a href="/kostenlos-inserieren/Wohnung%20(Miete)">Wohnung</a>
+                </li>
+                <li>
+                  <a href="/kostenlos-inserieren/Haus%20(Miete)">Haus</a>
+                </li>
+                <li class="business-tooltip">
+                  <a href="/kostenlos-inserieren/Gewerbeimmobilie%20(Miete)">Gewerbeimmobilie</a>
+                </li>
+                <li>
+                  <a href="/kostenlos-inserieren/WG-Zimmer%20(Miete)">WG-Zimmer</a>
+                </li>
+                <li>
+                  <a href="/kostenlos-inserieren/Sonstiges%20(Miete)">Sonstiges</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <h3>zu verkaufen</h3>
+              <ul>
+                <li>
+                  <a href="/kostenlos-inserieren/Wohnung%20(Kauf)">Wohnung</a>
+                </li>
+                <li>
+                  <a href="/kostenlos-inserieren/Haus%20(Kauf)">Haus</a>
+                </li>
+                <li class="business-tooltip">
+                  <a href="/kostenlos-inserieren/Gewerbeimmobilie%20(Kauf)">Gewerbeimmobilie</a>
+                </li>
+                <li>
+                  <a href="/kostenlos-inserieren/Grundst%C3%BCck%20(Kauf)">Grundstück</a>
+                </li>
+                <li>
+                  <a href="/kostenlos-inserieren/Sonstiges%20(Kauf)">Sonstiges</a>
+                </li>
+              </ul>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <div class="main-navi-section">
+          <div class="user-link-area">
+            <a href="/registrieren" class="login-link header-link register-btn">Registrieren</a> <a href="/einloggen" class="login-link header-link">Login</a>
+          </div><a href="/maklergeschichten" class="header-link realtor-stories-link">Maklergeschichten</a>
+          <div class="about-link-area-position about-link-area layover-active-area">
+            <a href="javascript:void(0);" class="about-link header-link icon-menu">Über keinmakler.at<span class="drop-arrow"></span></a>
+            <div class="layover-wrapper dropdown about-dropdown-menu">
+              <div class="layover clearfix">
+                <div>
+                  <a href="/#about" class="none">Warum keinmakler.at?</a> <a href="/fragen-antworten" class="none">Fragen &amp; Antworten</a> <a href="/newsletter/subscribe" class="none">Newsletter</a>
+                  <div class="bottom-area">
+                    <ul>
+                      <li><span></span>Facebook</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><a href="/merkliste" class="none header-link icon-star watch-list-link"><span>Merkliste</span> <span class="watch-list-count"></span></a>
+        </div>
+      </div>
+      <div class="mobile-menu-button"></div>
+    </div>
+  </div>
+  <div id="search-profiles">
+    <div class="top-border"></div>
+    <p class="search-profiles-headline">Meine&nbsp;Suchen</p>
+    <div id="close-search">
+      <a href="javascript:void(0);"></a>
+    </div>
+    <div class="profiles-blank">
+      <p>Neue Treffer zu deiner Suche per E-Mail erhalten, und einfach zwischen deinen Suchen navigieren.</p>
+      <p class="search-profile-btn"><a href="/registrieren">Jetzt Gratis Account anlegen</a></p>
+    </div>
+  </div>
+  <div id="container" class="list-view-jimmbo">
+    <script type='application/ld+json'>
+    {
+        "@context": "http://schema.org/",
+        "@type": "CollectionPage"
+    }
+    </script>
+    <div class="mobile-filter-wrap m-show">
+      <a href="#" class="mobile-filter-link">Filter bearbeiten</a>
+    </div>
+    <form accept-charset="UTF-8" action="/privatimmobilien" data-remote="true" id="filter-realties-form" method="get" name="filter-realties-form">
+      <div style="margin:0;padding:0;display:inline">
+        <input name="utf8" type="hidden" value="&#x2713;">
+      </div>
+      <div id="filter" class="clearfix">
+        <input id="realty_type" name="realty_type" type="hidden" value="Sonstiges (Kauf)"> <input id="order" name="order" type="hidden" value="date-desc"> <input id="limit" name="limit" type="hidden" value="0"> <input id="offset" name="offset" type="hidden" value="0"> <input id="search_mode" name="search_mode" type="hidden"> <input id="search_data" name="search_data" type="hidden"> <input autocomplete="off" id="meta" name="meta" type="hidden" value="false"> <input id="lat" name="lat" type="hidden"> <input id="lng" name="lng" type="hidden"> <input id="radius" name="radius" type="hidden"> <input id="view_mode" name="view_mode" type="hidden" value="list">
+        <div class="search-select-wrap inactive">
+          <div id="search-select">
+            <div class="location-field">
+              <div class="input-wrapper">
+                <input id="searchTextField" name="search_field" type="text" size="50" autocomplete="off" placeholder="Wo möchtest du suchen?" value="">
+                <div class="map-btn">
+                  <a href="javascript:void(0);" class="map-layover-link icon-radius" id="map-layover-link-button">Umkreis</a>
+                </div><a href="javascript:void(0);" class="clear" style="display:none;">x</a>
+              </div>
+              <div class="radius-link-wrapper">
+                <div class="reset-radius-link">
+                  <a href="javascript:void(0);" class="map-layover-link-zoom" style="display:none;">Umkreissuche...</a>
+                </div>
+                <div class="close-radius-link" style="display:none;">
+                  <a href="javascript:void(0);" class="map-layover-link-back">x</a>
+                </div>
+              </div>
+            </div>
+            <script type="text/javascript">
+                                        $(document).ready(function() {
+                                                        mapRealtiesJIMMBO = [["3458112", "normal", true, "Sonstiges zum Kauf / 12m2 / 19.500 € monatl.", "48.1903503", "16.3278423"], ["3458668", "normal", true, "Sonstiges zum Kauf / 33m2 / 75.000 € monatl.", "46.6286393", "14.3000538"], ["3458762", "normal", true, "Sonstiges zum Kauf / 12m2 / 23.000 € monatl.", "48.2100239", "16.3353751"], ["3458869", "normal", true, "Sonstiges zum Kauf / 33000m2 / 970.000 € monatl.", "48.41166", "16.51144"], ["3459154", "normal", true, "Sonstiges zum Kauf / 10m2 / 13.000 € monatl.", "48.1660442", "16.3179974"], ["3459248", "normal", true, "Sonstiges zum Kauf / 1500m2 / 4.900.000 € monatl.", "47.9721407", "16.2125532"], ["3459927", "normal", true, "Sonstiges zum Kauf / 6262m2 / 20.038 € monatl.", "48.5790354", "13.5250024"]];
+                                                        //mapRealtiesMeta = [1];
+
+                                                        if ($.cookie('search_config').split("#")[6] == 'map') {
+                                                                initMap();
+                                                        }
+                                                });
+            </script>
+            <ul id="advanced-filter" class="clearfix">
+              <li id="filter-districts" class="filter-link layover-active-area filter-districts" style="display:none;">
+                <a href="javascript:void(0);" class="open">Alle Bezirke</a>
+                <div class="filter-reset-wrapper">
+                  <a href="javascript:void(0);" class="filter-reset" style="display:none;">x</a>
+                </div>
+                <div class="layover-wrapper">
+                  <div class="filter-layover clearfix">
+                    <div class="districts-wrapper">
+                      <div class="label">
+                        Bezirke
+                      </div>
+                      <div class="district-list">
+                        <div class="district-item">
+                          <label for="district-1"><input type="checkbox" class="district" data-district="1" id="district-1" value="1"> <span class="cb-label">1.</span></label>
+                        </div>
+                        <div class="district-item">
+                          <label for="district-2"><input type="checkbox" class="district" data-district="2" id="district-2" value="2"> <span class="cb-label">2.</span></label>
+                        </div>
+                        <div class="district-item">
+                          <label for="district-3"><input type="checkbox" class="district" data-district="3" id="district-3" value="3"> <span class="cb-label">3.</span></label>
+                        </div>
+                        <div class="district-item">
+                          <label for="district-4"><input type="checkbox" class="district" data-district="4" id="district-4" value="4"> <span class="cb-label">4.</span></label>
+                        </div>
+                        <div class="district-item">
+                          <label for="district-5"><input type="checkbox" class="district" data-district="5" id="district-5" value="5"> <span class="cb-label">5.</span></label>
+                        </div>
+                        <div class="district-item">
+                          <label for="district-6"><input type="checkbox" class="district" data-district="6" id="district-6" value="6"> <span class="cb-label">6.</span></label>
+                        </div>
+                        <div class="district-item">
+                          <label for="district-7"><input type="checkbox" class="district" data-district="7" id="district-7" value="7"> <span class="cb-label">7.</span></label>
+                        </div>
+                        <div class="district-item">
+                          <label for="district-8"><input type="checkbox" class="district" data-district="8" id="district-8" value="8"> <span class="cb-label">8.</span></label>
+                        </div>
+                        <div class="district-item">
+                          <label for="district-9"><input type="checkbox" class="district" data-district="9" id="district-9" value="9"> <span class="cb-label">9.</span></label>
+                        </div>
+                        <div class="district-item">
+                          <label for="district-10"><input type="checkbox" class="district" data-district="10" id="district-10" value="10"> <span class="cb-label">10.</span></label>
+                        </div>
+                        <div class="district-item">
+                          <label for="district-11"><input type="checkbox" class="district" data-district="11" id="district-11" value="11"> <span class="cb-label">11.</span></label>
+                        </div>
+                        <div class="district-item">
+                          <label for="district-12"><input type="checkbox" class="district" data-district="12" id="district-12" value="12"> <span class="cb-label">12.</span></label>
+                        </div>
+                        <div class="district-item">
+                          <label for="district-13"><input type="checkbox" class="district" data-district="13" id="district-13" value="13"> <span class="cb-label">13.</span></label>
+                        </div>
+                        <div class="district-item">
+                          <label for="district-14"><input type="checkbox" class="district" data-district="14" id="district-14" value="14"> <span class="cb-label">14.</span></label>
+                        </div>
+                        <div class="district-item">
+                          <label for="district-15"><input type="checkbox" class="district" data-district="15" id="district-15" value="15"> <span class="cb-label">15.</span></label>
+                        </div>
+                        <div class="district-item">
+                          <label for="district-16"><input type="checkbox" class="district" data-district="16" id="district-16" value="16"> <span class="cb-label">16.</span></label>
+                        </div>
+                        <div class="district-item">
+                          <label for="district-17"><input type="checkbox" class="district" data-district="17" id="district-17" value="17"> <span class="cb-label">17.</span></label>
+                        </div>
+                        <div class="district-item">
+                          <label for="district-18"><input type="checkbox" class="district" data-district="18" id="district-18" value="18"> <span class="cb-label">18.</span></label>
+                        </div>
+                        <div class="district-item">
+                          <label for="district-19"><input type="checkbox" class="district" data-district="19" id="district-19" value="19"> <span class="cb-label">19.</span></label>
+                        </div>
+                        <div class="district-item">
+                          <label for="district-20"><input type="checkbox" class="district" data-district="20" id="district-20" value="20"> <span class="cb-label">20.</span></label>
+                        </div>
+                        <div class="district-item">
+                          <label for="district-21"><input type="checkbox" class="district" data-district="21" id="district-21" value="21"> <span class="cb-label">21.</span></label>
+                        </div>
+                        <div class="district-item">
+                          <label for="district-22"><input type="checkbox" class="district" data-district="22" id="district-22" value="22"> <span class="cb-label">22.</span></label>
+                        </div>
+                        <div class="district-item">
+                          <label for="district-23"><input type="checkbox" class="district" data-district="23" id="district-23" value="23"> <span class="cb-label">23.</span></label>
+                        </div>
+                        <div style="clear:both"></div>
+                      </div>
+                    </div><a href="javascript:void(0);" class="submit-btn">Anwenden</a>
+                  </div>
+                </div>
+              </li>
+              <div class="realty-type filter-link filter-realty-type">
+                <div class="realty-type-layover">
+                  <ul class="column">
+                    <li class="headline">Mieten</li>
+                    <li data-type="Wohnung (Miete)">
+                      <a href="javascript:void(0);">Wohnungen</a>
+                    </li>
+                    <li data-type="Haus (Miete)">
+                      <a href="javascript:void(0);">Häuser</a>
+                    </li>
+                    <li class="business-tooltip" data-type="Gewerbeimmobilie (Miete)">
+                      <a href="javascript:void(0);">Gewerbeimmobilien</a>
+                    </li>
+                    <li data-type="WG-Zimmer (Miete)">
+                      <a href="javascript:void(0);">WG-Zimmer</a>
+                    </li>
+                    <li data-type="Sonstiges (Miete)">
+                      <a href="javascript:void(0);">Sonstiges</a>
+                    </li>
+                  </ul>
+                  <ul class="column second">
+                    <li class="headline">Kaufen</li>
+                    <li data-type="Wohnung (Kauf)">
+                      <a href="javascript:void(0);">Wohnungen</a>
+                    </li>
+                    <li data-type="Haus (Kauf)">
+                      <a href="javascript:void(0);">Häuser</a>
+                    </li>
+                    <li class="business-tooltip" data-type="Gewerbeimmobilie (Kauf)">
+                      <a href="javascript:void(0);">Gewerbeimmobilien</a>
+                    </li>
+                    <li data-type="Grundstück (Kauf)">
+                      <a href="javascript:void(0);">Grundstücke</a>
+                    </li>
+                    <li data-type="Sonstiges (Kauf)" class="selected">
+                      <a href="javascript:void(0);">Sonstiges</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="realty-type-select-wrap">
+                  <a href="javascript:void(0);" class="realty-type-select">Sonstiges (Kauf)<span class="icon-arrow-down"></span></a>
+                  <div class="filter-reset-wrapper">
+                    <a href="javascript:void(0);" class="filter-reset" style="display:none;">x</a>
+                  </div>
+                </div>
+              </div>
+              <li class="filter-link layover-active-area filter-costs">
+                <a href="javascript:void(0);" class="open">Kosten</a>
+                <div class="filter-reset-wrapper">
+                  <a href="javascript:void(0);" class="filter-reset" style="display:none;">x</a>
+                </div>
+                <div class="layover-wrapper">
+                  <div class="filter-layover costs clearfix">
+                    <div class="row">
+                      <label class="label first" for="costs-max">bis</label> <span class="label">&euro;</span> <input class="text" id="costs-max" type="text" name="costs_max" value="">
+                    </div><a href="javascript:void(0);" class="submit-btn">Anwenden</a>
+                  </div>
+                </div>
+              </li>
+              <li class="filter-link layover-active-area filter-size">
+                <a href="javascript:void(0);" class="open">Größe</a>
+                <div class="filter-reset-wrapper">
+                  <a href="javascript:void(0);" class="filter-reset" style="display:none;">x</a>
+                </div>
+                <div class="layover-wrapper">
+                  <div class="filter-layover size clearfix">
+                    <div class="row">
+                      <label class="label first" for="size-min">ab</label> <span class="label">m<sup>2</sup></span> <input class="text" id="size-min" type="text" name="size_min" value="">
+                    </div><a href="javascript:void(0);" class="additional icon-plus">max. Größe angeben</a>
+                    <div class="layover-hidden row" style="display:none;">
+                      <label class="label first" for="size-max">bis</label> <input class="text" id="size-max" type="text" name="size_max" value=""> <span class="label">m<sup>2</sup></span>
+                    </div><a href="javascript:void(0);" class="submit-btn">Anwenden</a>
+                  </div>
+                </div>
+              </li>
+              <li class="filter-link layover-active-area filter-rooms">
+                <a href="javascript:void(0);" class="open">Zimmer</a>
+                <div class="filter-reset-wrapper">
+                  <a href="javascript:void(0);" class="filter-reset" style="display:none;">x</a>
+                </div>
+                <div class="layover-wrapper">
+                  <div class="filter-layover rooms clearfix">
+                    <div class="row">
+                      <label class="label first" for="rooms-min">ab</label> <input class="text" id="rooms-min" type="text" name="rooms_min" value=""> <span class="label">Zimmer</span>
+                    </div><a href="javascript:void(0);" class="additional icon-plus">max. Zimmer angeben</a>
+                    <div class="layover-hidden row" style="display:none;">
+                      <label class="label first" for="rooms-max">bis</label> <input class="text" id="rooms-max" type="text" name="rooms_max" value=""> <span class="label">Zimmer</span>
+                    </div><a href="javascript:void(0);" class="submit-btn">Anwenden</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="filteroptions" class="filteroptions-normal clearfix">
+          <span id="jimmbo-search-results-counter" style="display:none;">7 Treffer</span> <span id="map-legend" style="display:none;"><span class="label">Legende</span> <span class="legend watched"><span class="legend-dot"></span><span class="legend-counter-watched"><span id="watchlist-map-counter">0</span> <span id="watchlist-map-counter-expr">Vorgemerkte Objekte</span></span></span></span>
+          <div class="search-adjustments">
+            <div class="sort-results layover-active-area">
+              <a href="javascript:void(0);" class="sort-link">Aktualität absteigend</a>
+              <div class="layover-wrapper dropdown">
+                <div class="layover-top"></div>
+                <div class="layover clearfix">
+                  <a class="order-option" href="javascript:void(0);">Aktualität aufsteigend</a> <a class="order-option selected" href="javascript:void(0);">Aktualität absteigend</a> <a class="order-option" href="javascript:void(0);">Preis aufsteigend</a> <a class="order-option" href="javascript:void(0);">Preis absteigend</a> <a class="order-option" href="javascript:void(0);">Größe aufsteigend</a> <a class="order-option" href="javascript:void(0);">Größe absteigend</a>
+                </div>
+              </div>
+            </div><span class="switch-view"><a href="javascript:void(0);" id="switch-to-map-link">Zur Karte<span class="longer">nansicht</span></a> <a href="javascript:void(0);" class="selected" id="switch-to-list-link">Zur Liste<span class="longer">nansicht</span></a></span>
+          </div>
+        </div>
+        <p id="no-results-header" style="display:none;">Leider keine zutreffenden Inserate für <span class="no-results-realty-type">provisionsfreie Immobilien</span>.</p>
+      </div>
+      <div class="pac-container">
+        <div id="google-autocomplete-ext" class="clearfix">
+          <input type="checkbox" id="autocomplete-checkbox" name="is_outside_country" style="display:none;" value="false"> <input type="hidden" id="autocomplete-country" value="AT">
+          <div class="google-img"></div>
+        </div>
+      </div>
+    </form>
+    <div id="no-results" style="display:none;" class="clearfix">
+      <div class="footer-actions clearfix dnone no-results">
+        <ul class="three-column">
+          <li>
+            <div class="notifications bottom-link">
+              <span class="sp-inactive">Um E-Mail Benachrichtigungen zu aktivieren benötigst du einen Account</span> 
+              <script type="text/javascript">
+
+
+                                                $(document).ready(function() {
+                                                        $(".sp-inactive").click(function() {
+                                                                window.location.href = "/registrieren";
+                                                        });
+                                                });
+              </script>
+            </div>
+          </li>
+          <li>
+            <a class="map-view noresults-map-btn bottom-link" href="javascript:void(0);">Weitersuchen in der Kartenansicht</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div id="offers" class="clearfix">
+        <div id="offer-results" style="">
+          <div itemscope itemtype="http://schema.org/Offer" itemid="realtyoffer3458112" class="offer-box clearfix" id="offer-box-realty-id-3458112">
+            <a href="/watch_lists/toggle?realty_id=3458112" class="favourite favourite-inactive" data-method="post" data-remote="true" rel="nofollow"></a> 
+            <script type="text/javascript">
+
+
+                $('#offer-box-realty-id-3458112 .favourite').mouseover(function() {
+                        if ($(this).hasClass('favourite-active')) {
+                                $('#layover-inactive-3458112').hide();
+                                $('#layover-active-3458112').show();
+                        } else {
+                                $('#layover-active-3458112').hide();
+                                $('#layover-inactive-3458112').show();
+                        }
+                });
+
+                $('#offer-box-realty-id-3458112 .favourite').mouseout(function() {
+                        $('#layover-active-3458112').hide();
+                        $('#layover-inactive-3458112').hide();
+                });
+
+                $('#offer-box-realty-id-3458112 .favourite').click(function() {
+                        $('#layover-inactive-3458112').toggle();
+                        $('#layover-active-3458112').toggle();
+                });
+            </script> <input class="direct-realty-path" type="hidden" value="/privatimmobilien/1150+Wien+Garagenstellplatz+nahe+Westbahnhof%C3%84ussere+Mariahilferstr+zu+verkaufen-3458112"> <input class="modal-realty-path" type="hidden" value="/privatimmobilien/1150+Wien+Garagenstellplatz+nahe+Westbahnhof%C3%84ussere+Mariahilferstr+zu+verkaufen-3458112"> <a itemprop="url" class="offer-box-bg clearfix" href="/privatimmobilien/1150+Wien+Garagenstellplatz+nahe+Westbahnhof%C3%84ussere+Mariahilferstr+zu+verkaufen-3458112"><span class="overflow"></span>
+            <div class="offer-box-slides">
+              <img alt="Dadlergasse, 1150 Wien ID:0" src="/system/pictures/images/000/012/004/medium/Dadler_2.jpeg?1557402361" style="border:0;">
+              <div class="visited-layover">
+                <span>Gesehen</span>
+              </div>
+            </div><span class="box-footer"><span itemprop="itemOffered" itemscope itemtype="http://schema.org/Place" itemid="realtyplace3458112"><span itemprop="Title" itemscope itemtype="http://schema.org/PostalAddress" class="row title"><span style="">Garagenstellplatz nahe Westbahnhof/Äussere Mariahilferstr. zu verkaufen</span></span> <span class="row"><span class="col">12 m&sup2;</span></span> <span itemprop="PostalAdress" itemscope itemtype="http://schema.org/PostalAddress" class="row postalAdress">Sonstiges (Kauf) in <span itemprop="postalCode">1150</span> Wien</span> <span class="row last" itemprop="priceSpecification" id="itemprice3458112" itemscope itemtype="http://schema.org/PriceSpecification" itemref="realtyoffer3458112">19.500 € <span class="label">monatliche Kosten</span>
+            <meta itemprop="price" itemref="itemprice3458112" content="19500">
+            <meta itemprop="priceCurrency" itemref="itemprice3458112" content="EUR">
+            <meta itemprop="businessFunction" itemref="realtyoffer3458112" content="leasing"></span></span></span>
+            <div class="overflow"></div></a>
+          </div>
+          <div itemscope itemtype="http://schema.org/Offer" itemid="realtyoffer3459248" class="offer-box clearfix" id="offer-box-realty-id-3459248">
+            <a href="/watch_lists/toggle?realty_id=3459248" class="favourite favourite-inactive" data-method="post" data-remote="true" rel="nofollow"></a> 
+            <script type="text/javascript">
+
+
+                $('#offer-box-realty-id-3459248 .favourite').mouseover(function() {
+                        if ($(this).hasClass('favourite-active')) {
+                                $('#layover-inactive-3459248').hide();
+                                $('#layover-active-3459248').show();
+                        } else {
+                                $('#layover-active-3459248').hide();
+                                $('#layover-inactive-3459248').show();
+                        }
+                });
+
+                $('#offer-box-realty-id-3459248 .favourite').mouseout(function() {
+                        $('#layover-active-3459248').hide();
+                        $('#layover-inactive-3459248').hide();
+                });
+
+                $('#offer-box-realty-id-3459248 .favourite').click(function() {
+                        $('#layover-inactive-3459248').toggle();
+                        $('#layover-active-3459248').toggle();
+                });
+            </script> <input class="direct-realty-path" type="hidden" value="/privatimmobilien/2540+Bad+V%C3%B6slau+Luxuri%C3%B6ses+Schloss+Villa+Weinfried+Provisionsfrei+von+Eigent%C3%BCmer-3459248"> <input class="modal-realty-path" type="hidden" value="/privatimmobilien/2540+Bad+V%C3%B6slau+Luxuri%C3%B6ses+Schloss+Villa+Weinfried+Provisionsfrei+von+Eigent%C3%BCmer-3459248"> <a itemprop="url" class="offer-box-bg clearfix" href="/privatimmobilien/2540+Bad+V%C3%B6slau+Luxuri%C3%B6ses+Schloss+Villa+Weinfried+Provisionsfrei+von+Eigent%C3%BCmer-3459248"><span class="overflow"></span>
+            <div class="offer-box-slides">
+              <img alt="Ludwigstraße, 2540 Bad Vöslau ID:0" src="/system/pictures/images/000/017/746/medium/1.jpeg?1567022237" style="border:0;">
+              <div class="visited-layover">
+                <span>Gesehen</span>
+              </div>
+            </div><span class="box-footer"><span itemprop="itemOffered" itemscope itemtype="http://schema.org/Place" itemid="realtyplace3459248"><span itemprop="Title" itemscope itemtype="http://schema.org/PostalAddress" class="row title"><span style="">Luxuriöses Schloss &quot;Villa Weinfried&quot; (Provisionsfrei von Eigentümer)</span></span> <span class="row"><span class="col">1.500 m&sup2;</span></span> <span itemprop="PostalAdress" itemscope itemtype="http://schema.org/PostalAddress" class="row postalAdress">Sonstiges (Kauf) in <span itemprop="postalCode">2540</span> Bad Vöslau</span> <span class="row last" itemprop="priceSpecification" id="itemprice3459248" itemscope itemtype="http://schema.org/PriceSpecification" itemref="realtyoffer3459248">4.900.000 € <span class="label">monatliche Kosten</span>
+            <meta itemprop="price" itemref="itemprice3459248" content="4900000">
+            <meta itemprop="priceCurrency" itemref="itemprice3459248" content="EUR">
+            <meta itemprop="businessFunction" itemref="realtyoffer3459248" content="leasing"></span></span></span>
+            <div class="overflow"></div></a>
+          </div>
+          <div itemscope itemtype="http://schema.org/Offer" itemid="realtyoffer3459927" class="offer-box clearfix" id="offer-box-realty-id-3459927">
+            <a href="/watch_lists/toggle?realty_id=3459927" class="favourite favourite-inactive" data-method="post" data-remote="true" rel="nofollow"></a> 
+            <script type="text/javascript">
+
+
+                $('#offer-box-realty-id-3459927 .favourite').mouseover(function() {
+                        if ($(this).hasClass('favourite-active')) {
+                                $('#layover-inactive-3459927').hide();
+                                $('#layover-active-3459927').show();
+                        } else {
+                                $('#layover-active-3459927').hide();
+                                $('#layover-inactive-3459927').show();
+                        }
+                });
+
+                $('#offer-box-realty-id-3459927 .favourite').mouseout(function() {
+                        $('#layover-active-3459927').hide();
+                        $('#layover-inactive-3459927').hide();
+                });
+
+                $('#offer-box-realty-id-3459927 .favourite').click(function() {
+                        $('#layover-inactive-3459927').toggle();
+                        $('#layover-active-3459927').toggle();
+                });
+            </script> <input class="direct-realty-path" type="hidden" value="/privatimmobilien/4785+Freinberg+Landw+Nutzgrund+227-3459927"> <input class="modal-realty-path" type="hidden" value="/privatimmobilien/4785+Freinberg+Landw+Nutzgrund+227-3459927"> <a itemprop="url" class="offer-box-bg clearfix" href="/privatimmobilien/4785+Freinberg+Landw+Nutzgrund+227-3459927"><span class="overflow"></span>
+            <div class="offer-box-slides">
+              <img alt="Hinding, 4785 Freinberg ID:0" src="/system/pictures/images/000/026/049/medium/Screenshot_20200708-135830_DORIS.jpeg?1594234005" style="border:0;">
+              <div class="visited-layover">
+                <span>Gesehen</span>
+              </div>
+            </div><span class="box-footer"><span itemprop="itemOffered" itemscope itemtype="http://schema.org/Place" itemid="realtyplace3459927"><span itemprop="Title" itemscope itemtype="http://schema.org/PostalAddress" class="row title"><span style="">Landw. Nutzgrund 227</span></span> <span class="row"><span class="col">6.262 m&sup2;</span></span> <span itemprop="PostalAdress" itemscope itemtype="http://schema.org/PostalAddress" class="row postalAdress">Sonstiges (Kauf) in <span itemprop="postalCode">4785</span> Freinberg</span> <span class="row last" itemprop="priceSpecification" id="itemprice3459927" itemscope itemtype="http://schema.org/PriceSpecification" itemref="realtyoffer3459927">20.038 € <span class="label">monatliche Kosten</span>
+            <meta itemprop="price" itemref="itemprice3459927" content="20038">
+            <meta itemprop="priceCurrency" itemref="itemprice3459927" content="EUR">
+            <meta itemprop="businessFunction" itemref="realtyoffer3459927" content="leasing"></span></span></span>
+            <div class="overflow"></div></a>
+          </div>
+          <div itemscope itemtype="http://schema.org/Offer" itemid="realtyoffer3458762" class="offer-box clearfix" id="offer-box-realty-id-3458762">
+            <a href="/watch_lists/toggle?realty_id=3458762" class="favourite favourite-inactive" data-method="post" data-remote="true" rel="nofollow"></a> 
+            <script type="text/javascript">
+
+
+                $('#offer-box-realty-id-3458762 .favourite').mouseover(function() {
+                        if ($(this).hasClass('favourite-active')) {
+                                $('#layover-inactive-3458762').hide();
+                                $('#layover-active-3458762').show();
+                        } else {
+                                $('#layover-active-3458762').hide();
+                                $('#layover-inactive-3458762').show();
+                        }
+                });
+
+                $('#offer-box-realty-id-3458762 .favourite').mouseout(function() {
+                        $('#layover-active-3458762').hide();
+                        $('#layover-inactive-3458762').hide();
+                });
+
+                $('#offer-box-realty-id-3458762 .favourite').click(function() {
+                        $('#layover-inactive-3458762').toggle();
+                        $('#layover-active-3458762').toggle();
+                });
+            </script> <input class="direct-realty-path" type="hidden" value="/privatimmobilien/1160+Wien+Garagenplatz+Parkplatz+Autostellplatz+in+Tiefgarage+1160+Wien-3458762"> <input class="modal-realty-path" type="hidden" value="/privatimmobilien/1160+Wien+Garagenplatz+Parkplatz+Autostellplatz+in+Tiefgarage+1160+Wien-3458762"> <a itemprop="url" class="offer-box-bg clearfix" href="/privatimmobilien/1160+Wien+Garagenplatz+Parkplatz+Autostellplatz+in+Tiefgarage+1160+Wien-3458762"><span class="overflow"></span>
+            <div class="offer-box-slides">
+              <img alt="No_pictures_small" src="/assets/no_pictures_small-94e83fd66756d249214a42c27fc68fae.png">
+              <div class="visited-layover">
+                <span>Gesehen</span>
+              </div>
+            </div><span class="box-footer"><span itemprop="itemOffered" itemscope itemtype="http://schema.org/Place" itemid="realtyplace3458762"><span itemprop="Title" itemscope itemtype="http://schema.org/PostalAddress" class="row title"><span style="">Garagenplatz Parkplatz Autostellplatz in Tiefgarage, 1160 Wien</span></span> <span class="row"><span class="col">12 m&sup2;</span></span> <span itemprop="PostalAdress" itemscope itemtype="http://schema.org/PostalAddress" class="row postalAdress">Sonstiges (Kauf) in <span itemprop="postalCode">1160</span> Wien</span> <span class="row last" itemprop="priceSpecification" id="itemprice3458762" itemscope itemtype="http://schema.org/PriceSpecification" itemref="realtyoffer3458762">23.000 € <span class="label">monatliche Kosten</span>
+            <meta itemprop="price" itemref="itemprice3458762" content="23000">
+            <meta itemprop="priceCurrency" itemref="itemprice3458762" content="EUR">
+            <meta itemprop="businessFunction" itemref="realtyoffer3458762" content="leasing"></span></span></span>
+            <div class="overflow"></div></a>
+          </div>
+          <div itemscope itemtype="http://schema.org/Offer" itemid="realtyoffer3458668" class="offer-box clearfix" id="offer-box-realty-id-3458668">
+            <a href="/watch_lists/toggle?realty_id=3458668" class="favourite favourite-inactive" data-method="post" data-remote="true" rel="nofollow"></a> 
+            <script type="text/javascript">
+
+
+                $('#offer-box-realty-id-3458668 .favourite').mouseover(function() {
+                        if ($(this).hasClass('favourite-active')) {
+                                $('#layover-inactive-3458668').hide();
+                                $('#layover-active-3458668').show();
+                        } else {
+                                $('#layover-active-3458668').hide();
+                                $('#layover-inactive-3458668').show();
+                        }
+                });
+
+                $('#offer-box-realty-id-3458668 .favourite').mouseout(function() {
+                        $('#layover-active-3458668').hide();
+                        $('#layover-inactive-3458668').hide();
+                });
+
+                $('#offer-box-realty-id-3458668 .favourite').click(function() {
+                        $('#layover-inactive-3458668').toggle();
+                        $('#layover-active-3458668').toggle();
+                });
+            </script> <input class="direct-realty-path" type="hidden" value="/privatimmobilien/9020+Klagenfurt+Anlageobjekt+in+Klagenfurt+Doppelgarage+mit+Rolltor+in+einer+Tiefgarage+in+zentraler+Lage-3458668"> <input class="modal-realty-path" type="hidden" value="/privatimmobilien/9020+Klagenfurt+Anlageobjekt+in+Klagenfurt+Doppelgarage+mit+Rolltor+in+einer+Tiefgarage+in+zentraler+Lage-3458668"> <a itemprop="url" class="offer-box-bg clearfix" href="/privatimmobilien/9020+Klagenfurt+Anlageobjekt+in+Klagenfurt+Doppelgarage+mit+Rolltor+in+einer+Tiefgarage+in+zentraler+Lage-3458668"><span class="overflow"></span>
+            <div class="offer-box-slides">
+              <img alt="Herbertstraße, 9020 Klagenfurt ID:0" src="/system/pictures/images/000/009/988/medium/Tiefgarage_Herbertstra%C3%9Fe_1.jpeg?1554362339" style="border:0;">
+              <div class="visited-layover">
+                <span>Gesehen</span>
+              </div>
+            </div><span class="box-footer"><span itemprop="itemOffered" itemscope itemtype="http://schema.org/Place" itemid="realtyplace3458668"><span itemprop="Title" itemscope itemtype="http://schema.org/PostalAddress" class="row title"><span style="">Anlageobjekt in Klagenfurt, Doppelgarage mit Rolltor in einer Tiefgarage in zentraler Lage</span></span> <span class="row"><span class="col">33 m&sup2;</span></span> <span itemprop="PostalAdress" itemscope itemtype="http://schema.org/PostalAddress" class="row postalAdress">Sonstiges (Kauf) in <span itemprop="postalCode">9020</span> Klagenfurt</span> <span class="row last" itemprop="priceSpecification" id="itemprice3458668" itemscope itemtype="http://schema.org/PriceSpecification" itemref="realtyoffer3458668">75.000 € <span class="label">monatliche Kosten</span>
+            <meta itemprop="price" itemref="itemprice3458668" content="75000">
+            <meta itemprop="priceCurrency" itemref="itemprice3458668" content="EUR">
+            <meta itemprop="businessFunction" itemref="realtyoffer3458668" content="leasing"></span></span></span>
+            <div class="overflow"></div></a>
+          </div>
+          <div itemscope itemtype="http://schema.org/Offer" itemid="realtyoffer3458869" class="offer-box clearfix" id="offer-box-realty-id-3458869">
+            <a href="/watch_lists/toggle?realty_id=3458869" class="favourite favourite-inactive" data-method="post" data-remote="true" rel="nofollow"></a> 
+            <script type="text/javascript">
+
+
+                $('#offer-box-realty-id-3458869 .favourite').mouseover(function() {
+                        if ($(this).hasClass('favourite-active')) {
+                                $('#layover-inactive-3458869').hide();
+                                $('#layover-active-3458869').show();
+                        } else {
+                                $('#layover-active-3458869').hide();
+                                $('#layover-inactive-3458869').show();
+                        }
+                });
+
+                $('#offer-box-realty-id-3458869 .favourite').mouseout(function() {
+                        $('#layover-active-3458869').hide();
+                        $('#layover-inactive-3458869').hide();
+                });
+
+                $('#offer-box-realty-id-3458869 .favourite').click(function() {
+                        $('#layover-inactive-3458869').toggle();
+                        $('#layover-active-3458869').toggle();
+                });
+            </script> <input class="direct-realty-path" type="hidden" value="/privatimmobilien/2122+Riedenthal+Biolandwirtschaft+an+der+Stadtgrenze-3458869"> <input class="modal-realty-path" type="hidden" value="/privatimmobilien/2122+Riedenthal+Biolandwirtschaft+an+der+Stadtgrenze-3458869"> <a itemprop="url" class="offer-box-bg clearfix" href="/privatimmobilien/2122+Riedenthal+Biolandwirtschaft+an+der+Stadtgrenze-3458869"><span class="overflow"></span>
+            <div class="offer-box-slides">
+              <img alt="Hauptstraße, 2122 Riedenthal ID:0" src="/system/pictures/images/000/012/405/medium/f16ffd99-9da9-4250-b52b-68164ea41762.jpeg?1557821758" style="border:0;">
+              <div class="visited-layover">
+                <span>Gesehen</span>
+              </div>
+            </div><span class="box-footer"><span itemprop="itemOffered" itemscope itemtype="http://schema.org/Place" itemid="realtyplace3458869"><span itemprop="Title" itemscope itemtype="http://schema.org/PostalAddress" class="row title"><span style="">Biolandwirtschaft an der Stadtgrenze !</span></span> <span class="row"><span class="col">33.000 m&sup2;</span></span> <span itemprop="PostalAdress" itemscope itemtype="http://schema.org/PostalAddress" class="row postalAdress">Sonstiges (Kauf) in <span itemprop="postalCode">2122</span> Riedenthal</span> <span class="row last" itemprop="priceSpecification" id="itemprice3458869" itemscope itemtype="http://schema.org/PriceSpecification" itemref="realtyoffer3458869">970.000 € <span class="label">monatliche Kosten</span>
+            <meta itemprop="price" itemref="itemprice3458869" content="970000">
+            <meta itemprop="priceCurrency" itemref="itemprice3458869" content="EUR">
+            <meta itemprop="businessFunction" itemref="realtyoffer3458869" content="leasing"></span></span></span>
+            <div class="overflow"></div></a>
+          </div>
+          <div itemscope itemtype="http://schema.org/Offer" itemid="realtyoffer3459154" class="offer-box clearfix" id="offer-box-realty-id-3459154">
+            <a href="/watch_lists/toggle?realty_id=3459154" class="favourite favourite-inactive" data-method="post" data-remote="true" rel="nofollow"></a> 
+            <script type="text/javascript">
+
+
+                $('#offer-box-realty-id-3459154 .favourite').mouseover(function() {
+                        if ($(this).hasClass('favourite-active')) {
+                                $('#layover-inactive-3459154').hide();
+                                $('#layover-active-3459154').show();
+                        } else {
+                                $('#layover-active-3459154').hide();
+                                $('#layover-inactive-3459154').show();
+                        }
+                });
+
+                $('#offer-box-realty-id-3459154 .favourite').mouseout(function() {
+                        $('#layover-active-3459154').hide();
+                        $('#layover-inactive-3459154').hide();
+                });
+
+                $('#offer-box-realty-id-3459154 .favourite').click(function() {
+                        $('#layover-inactive-3459154').toggle();
+                        $('#layover-active-3459154').toggle();
+                });
+            </script> <input class="direct-realty-path" type="hidden" value="/privatimmobilien/1120+Wien+StapelParkplatz+in+Hoffingergasse+1120+Wien-3459154"> <input class="modal-realty-path" type="hidden" value="/privatimmobilien/1120+Wien+StapelParkplatz+in+Hoffingergasse+1120+Wien-3459154"> <a itemprop="url" class="offer-box-bg clearfix" href="/privatimmobilien/1120+Wien+StapelParkplatz+in+Hoffingergasse+1120+Wien-3459154"><span class="overflow"></span>
+            <div class="offer-box-slides">
+              <img alt="Hoffingergasse 3, 1120 Wien ID:0" src="/system/pictures/images/000/016/311/medium/20190802_055044a.jpeg?1564724366" style="border:0;">
+              <div class="visited-layover">
+                <span>Gesehen</span>
+              </div>
+            </div><span class="box-footer"><span itemprop="itemOffered" itemscope itemtype="http://schema.org/Place" itemid="realtyplace3459154"><span itemprop="Title" itemscope itemtype="http://schema.org/PostalAddress" class="row title"><span style="">Stapel-Parkplatz in Hoffingergasse, 1120 Wien</span></span> <span class="row"><span class="col">10 m&sup2;</span></span> <span itemprop="PostalAdress" itemscope itemtype="http://schema.org/PostalAddress" class="row postalAdress">Sonstiges (Kauf) in <span itemprop="postalCode">1120</span> Wien</span> <span class="row last" itemprop="priceSpecification" id="itemprice3459154" itemscope itemtype="http://schema.org/PriceSpecification" itemref="realtyoffer3459154">13.000 € <span class="label">monatliche Kosten</span>
+            <meta itemprop="price" itemref="itemprice3459154" content="13000">
+            <meta itemprop="priceCurrency" itemref="itemprice3459154" content="EUR">
+            <meta itemprop="businessFunction" itemref="realtyoffer3459154" content="leasing"></span></span></span>
+            <div class="overflow"></div></a>
+          </div>
+        </div>
+        <div id="pagination" style="display:none;">
+          <div class="page-prev disabled">
+            &laquo;
+          </div>
+          <div class="page selected" data-offset="0">
+            1
+          </div>
+          <div class="page-next">
+            &raquo;
+          </div>
+        </div>
+        <div id="load-realties-animation"></div>
+      </div>
+    </div>
+    <div id="map-view-not-available-wrapper">
+      <div id="map-view-not-available">
+        Kartenansicht und Umkreissuche sind nur im Porträt-Modus verfügbar.
+      </div>
+    </div>
+  </div>
+  <div id="map-view" class="clearfix" style="display:none;">
+    <div class="shadow"></div>
+    <div class="center-point">
+      <div class="load-map-text"></div>
+      <div class="load-map-animation"></div>
+    </div>
+    <div id="map" style="position: absolute; width:100%; height:100%; left: 0; top: 204px;"></div>
+  </div>
+  <div class="footer-actions clearfix dnone results">
+    <ul class="three-column">
+      <li>
+        <div class="notifications bottom-link">
+          <span class="sp-inactive">Um E-Mail Benachrichtigungen zu aktivieren benötigst du einen Account</span> 
+          <script type="text/javascript">
+
+
+                                                $(document).ready(function() {
+                                                        $(".sp-inactive").click(function() {
+                                                                window.location.href = "/registrieren";
+                                                        });
+                                                });
+          </script>
+        </div>
+      </li>
+      <li>
+        <a class="map-view noresults-map-btn bottom-link" href="javascript:void(0);">Weitersuchen in der Kartenansicht</a>
+      </li>
+    </ul>
+  </div>
+  <div id="footer-follow-links" style="display:none;">
+    <div id="footer">
+      <div class="footer-inner">
+        <ul>
+          <li class="headline">Über keinmakler.at</li>
+          <li>
+            <a href="/#about">Warum keinmakler.at</a>
+          </li>
+          <li>
+            <a href="/fragen-antworten" class="none">Fragen &amp; Antworten</a>
+          </li>
+          <li style="position:relative">
+            <div class="new-realty-dropdown" style="display:none">
+              <div class="dropdown-inner">
+                <div class="col">
+                  <h3>zu vermieten</h3>
+                  <ul>
+                    <li>
+                      <a href="/kostenlos-inserieren/Wohnung%20(Miete)">Wohnung</a>
+                    </li>
+                    <li>
+                      <a href="/kostenlos-inserieren/Haus%20(Miete)">Haus</a>
+                    </li>
+                    <li class="business-tooltip">
+                      <a href="/kostenlos-inserieren/Gewerbeimmobilie%20(Miete)">Gewerbeimmobilie</a>
+                    </li>
+                    <li>
+                      <a href="/kostenlos-inserieren/WG-Zimmer%20(Miete)">WG-Zimmer</a>
+                    </li>
+                    <li>
+                      <a href="/kostenlos-inserieren/Sonstiges%20(Miete)">Sonstiges</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3>zu verkaufen</h3>
+                  <ul>
+                    <li>
+                      <a href="/kostenlos-inserieren/Wohnung%20(Kauf)">Wohnung</a>
+                    </li>
+                    <li>
+                      <a href="/kostenlos-inserieren/Haus%20(Kauf)">Haus</a>
+                    </li>
+                    <li class="business-tooltip">
+                      <a href="/kostenlos-inserieren/Gewerbeimmobilie%20(Kauf)">Gewerbeimmobilie</a>
+                    </li>
+                    <li>
+                      <a href="/kostenlos-inserieren/Grundst%C3%BCck%20(Kauf)">Grundstück</a>
+                    </li>
+                    <li>
+                      <a href="/kostenlos-inserieren/Sonstiges%20(Kauf)">Sonstiges</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </div><a href="javascript:void(0);" class="open-new-realty-dropdown">Gratis inserieren</a> 
+            <script>
+
+
+                                        $(document).ready(function() {
+                                                $("#footer .open-new-realty-dropdown").click(function() {
+                                                        $("#footer .new-realty-dropdown").toggle();
+                                                });
+                                                $("#footer .new-realty-dropdown").click(function() {
+                                                        $(this).toggle();
+                                                });
+                                                
+                                                $("body").click(function(e) {
+                                                        if ($(e.target).closest($("#footer .open-new-realty-dropdown")).length)
+                                                        return;
+                                                        if (!$(e.target).closest($("#footer .new-realty-dropdown")).length)
+                                                        $("#footer .new-realty-dropdown").hide();
+                                                });
+                                        });
+            </script>
+          </li>
+        </ul>
+        <ul>
+          <li class="headline">Weitere Informationen</li>
+          <li>
+            <a href="/agb" class="none">AGB</a>
+          </li>
+          <li>
+            <a href="/datenschutz" class="none">Datenschutz</a>
+          </li>
+          <li>
+            <a href="/impressum" class="none">Impressum</a>
+          </li>
+        </ul>
+        <ul class="last">
+          <li class="headline">Bleib am Laufenden</li>
+          <li>
+            <a href="/newsletter/subscribe" class="icon-newsletter">Newsletter</a>
+          </li>
+          <li>Facebook</li>
+        </ul>
+        <div class="button-box"></div>
+        <p class="bottom-text">© 2020 keinmakler.at<br>
+        Alle Rechte vorbehalten.</p>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+        // Hide footer instantly on search-page
+        if (!document.getElementById('no-results') && !document.getElementById('offers'))
+                document.getElementById('footer-follow-links').style.display = 'block';
+  </script>
+  <div class="cookiebar" id="cookiebar" style="display:none">
+    <div class="cookiebar-text">
+      Durch die Nutzung unserer Angebote erklären Sie sich mit dem Setzen von Cookies einverstanden. <a href="/datenschutz#cookies">Details ansehen</a>
+    </div><button class="cookiebar-btn" id="cookiebar-btn">Zustimmen</button>
+  </div>
+  <div id="infinite-waypoint" style="height:1px;width:100%;display:block;"></div>
+</body>
+</html>

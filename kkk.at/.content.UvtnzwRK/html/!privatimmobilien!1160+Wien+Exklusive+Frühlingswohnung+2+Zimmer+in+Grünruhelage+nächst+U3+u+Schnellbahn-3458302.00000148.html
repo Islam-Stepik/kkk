@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html id="" style="overflow: visible !important;">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<body onunload="" class="realties-show list-visible">
+  <div id="flash-notice-container-wrapper" class="clearfix" style="display:none;">
+    <table>
+      <tr>
+        <td class="text"></td>
+        <td width="50px">
+          <a href="javascript:void(0);" class="close-message-link">X</a>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <script type="text/javascript"></script>
+  <div style="display: none;">
+    <div id="message-send-feedback" class="fancybox-message">
+      <div class="text">
+        <h2 class="main-headline">Danke für dein Feedback!</h2>
+      </div>
+      <form action="">
+        <div style="display:none;">
+          <input id="honey_pot" name="honey_pot" type="text">
+        </div>
+        <textarea cols="40" id="feedback-body" name="body" placeholder="Anregung, Problem, Frage, Lob/Kritik..." rows="10"></textarea> <input class="input" id="feedback-email" name="email" placeholder="Deine E-Mail-Adresse" type="text" value=""> <a href="javascript:void(0);" class="disabled btn green">Senden</a>
+        <div class="load-realties-animation" style="display:none;"></div>
+      </form>
+    </div>
+    <script type="text/javascript">
+                                $(document).ready(function() {
+                                        $("#feedback-body, #feedback-email").keyup(function() {
+                                                ($("#feedback-body").val() == "" || $("#feedback-email").val() == "") ? $("#message-send-feedback .btn").addClass("disabled") : $("#message-send-feedback .btn").removeClass("disabled");
+                                        });
+                                        $("#message-send-feedback .btn").click(function() {
+                                                if ($('#honey_pot').val() != "" || $('#feedback-body').val() == "" || $('#feedback-email').val() == "")
+                                                        return;
+
+                                                $("#message-send-feedback .btn").hide();
+                                                $("#message-send-feedback .btn").next(".load-realties-animation").show();
+                                                $.post("/mails/feedback_email", { body: $('#feedback-body').val(), email: $('#feedback-email').val(), browser: getBrowserInfo() });
+                                        });
+                                });
+    </script>
+  </div><a href="#message-send-feedback" class="feedback-btn fancybox-link">Feedback</a> <span id="search-profile-loader" class="dnone"></span> <span id="search-profile-message" style="display:none;">Suche gespeichert</span>
+  <div class="header-wrap">
+    <a href="/web/20200916111817/https://keinmakler.at/" id="logobox"></a>
+    <div class="searchprofile-link-wrap m-hide">
+      <a href="javascript:void(0)" class="searchprofile-link open"></a>
+    </div>
+    <div id="header" class="clearfix">
+      <div id="detail-navi" class="m-hide">
+        <a href="/web/20200916111817/https://keinmakler.at/Alle-Immobilientypen/" class="navi-link new icon-new-search"><span class="new-search-text">Neue Suche</span></a>
+      </div>
+      <div class="mobile-nav-link m-show">
+        <div class="layover-wrapper dropdown about-dropdown-menu">
+          <div class="layover clearfix">
+            <div>
+              Warum keinmakler.at? <a href="/web/20200916111817/https://keinmakler.at/fragen-antworten" class="none">Fragen &amp; Antworten</a> <a href="/web/20200916111817/https://keinmakler.at/newsletter/subscribe" class="none">Newsletter</a>
+              <div class="bottom-area">
+                <ul>
+                  <li><span></span>Facebook</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div><a href="/web/20200916111817/https://keinmakler.at/registrieren" class="login-link header-link register-btn">Registrieren</a> <a href="/web/20200916111817/https://keinmakler.at/einloggen" class="login-link header-link">Login</a>
+      </div>
+      <div id="main-navi-mobile">
+        <ul>
+          <li>
+            <a href="javascript:void(0);" class="icon-pencil open-new-realty-dropdown" id="new-realty-btn">Gratis inserieren!</a>
+            <div class="new-realty-dropdown" style="display:none">
+              <div class="dropdown-inner">
+                <div class="col">
+                  <h3>zu vermieten</h3>
+                  <ul>
+                    <li>
+                      <a href="/web/20200916111817/https://keinmakler.at/kostenlos-inserieren/Wohnung%20(Miete)">Wohnung</a>
+                    </li>
+                    <li>
+                      <a href="/web/20200916111817/https://keinmakler.at/kostenlos-inserieren/Haus%20(Miete)">Haus</a>
+                    </li>
+                    <li class="business-tooltip">
+                      <a href="/web/20200916111817/https://keinmakler.at/kostenlos-inserieren/Gewerbeimmobilie%20(Miete)">Gewerbeimmobilie</a>
+                    </li>
+                    <li>
+                      <a href="/web/20200916111817/https://keinmakler.at/kostenlos-inserieren/WG-Zimmer%20(Miete)">WG-Zimmer</a>
+                    </li>
+                    <li>
+                      <a href="/web/20200916111817/https://keinmakler.at/kostenlos-inserieren/Sonstiges%20(Miete)">Sonstiges</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3>zu verkaufen</h3>
+                  <ul>
+                    <li>
+                      <a href="/web/20200916111817/https://keinmakler.at/kostenlos-inserieren/Wohnung%20(Kauf)">Wohnung</a>
+                    </li>
+                    <li>
+                      <a href="/web/20200916111817/https://keinmakler.at/kostenlos-inserieren/Haus%20(Kauf)">Haus</a>
+                    </li>
+                    <li class="business-tooltip">
+                      <a href="/web/20200916111817/https://keinmakler.at/kostenlos-inserieren/Gewerbeimmobilie%20(Kauf)">Gewerbeimmobilie</a>
+                    </li>
+                    <li>
+                      <a href="/web/20200916111817/https://keinmakler.at/kostenlos-inserieren/Grundst%C3%BCck%20(Kauf)">Grundstück</a>
+                    </li>
+                    <li>
+                      <a href="/web/20200916111817/https://keinmakler.at/kostenlos-inserieren/Sonstiges%20(Kauf)">Sonstiges</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+            <script>
+                                                $(document).ready(function() {
+                                                        $("#main-navi-mobile .open-new-realty-dropdown").click(function() {
+                                                                $("#main-navi-mobile .new-realty-dropdown").toggle();
+                                                        });
+                                                        $("#main-navi-mobile .new-realty-dropdown").click(function() {
+                                                                $(this).toggle();
+                                                        });
+
+                                                        $("body").click(function(e) {
+                                                                if ($(e.target).closest($("#main-navi-mobile .open-new-realty-dropdown")).length)
+                                                                        return;
+                                                                if (!$(e.target).closest($("#main-navi-mobile .new-realty-dropdown")).length)
+                                                                        $("#main-navi-mobile .new-realty-dropdown").hide();
+                                                        });
+                                                });
+            </script>
+          </li>
+          <li>
+            <a href="/web/20200916111817/https://keinmakler.at/merkliste" class="icon-star"><span>Merkliste</span> <span class="watch-list-count"></span></a>
+          </li>
+          <li class="about-link-area layover-active-area">
+            <a href="javascript:void(0);" class="icon-menu about-dropdown-link">Über keinmakler.at</a>
+            <div class="layover-wrapper dropdown about-dropdown-menu">
+              <div class="layover clearfix">
+                <div>
+                  Warum keinmakler.at? <a href="/web/20200916111817/https://keinmakler.at/fragen-antworten" class="none">Fragen &amp; Antworten</a> <a href="/web/20200916111817/https://keinmakler.at/newsletter/subscribe" class="none">Newsletter</a>
+                  <div class="bottom-area">
+                    <ul>
+                      <li><span></span>Facebook</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="/web/20200916111817/https://keinmakler.at/maklergeschichten" class="realtor-stories-link">Maklergeschichten</a>
+          </li>
+          <li>
+            <a href="/web/20200916111817/https://keinmakler.at/einloggen" class="icon-person">Login</a>
+          </li>
+          <li>
+            <a href="/web/20200916111817/https://keinmakler.at/registrieren" class="icon-add-person">Registrieren</a>
+          </li>
+        </ul>
+      </div>
+      <div id="main-navi" class="mobile-hide">
+        <a href="javascript:void(0);" class="header-link icon-pencil new-realty-btn open-new-realty-dropdown" id="new-realty-btn">Gratis inserieren!</a> 
+        <script>
+
+
+        $(document).ready(function() {
+          $("#main-navi .open-new-realty-dropdown").click(function() {
+            $("#main-navi .new-realty-dropdown").toggle();
+          });
+          $("body").click(function(e) {
+            if ($(e.target).closest($("#main-navi .open-new-realty-dropdown")).length)
+              return;
+            if (!$(e.target).closest($("#main-navi .new-realty-dropdown")).length)
+              $("#main-navi .new-realty-dropdown").hide();
+          });
+        });
+        </script>
+        <div class="new-realty-dropdown" style="display:none">
+          <div class="dropdown-inner">
+            <div class="col">
+              <h3>zu vermieten</h3>
+              <ul>
+                <li>
+                  <a href="/web/20200916111817/https://keinmakler.at/kostenlos-inserieren/Wohnung%20(Miete)">Wohnung</a>
+                </li>
+                <li>
+                  <a href="/web/20200916111817/https://keinmakler.at/kostenlos-inserieren/Haus%20(Miete)">Haus</a>
+                </li>
+                <li class="business-tooltip">
+                  <a href="/web/20200916111817/https://keinmakler.at/kostenlos-inserieren/Gewerbeimmobilie%20(Miete)">Gewerbeimmobilie</a>
+                </li>
+                <li>
+                  <a href="/web/20200916111817/https://keinmakler.at/kostenlos-inserieren/WG-Zimmer%20(Miete)">WG-Zimmer</a>
+                </li>
+                <li>
+                  <a href="/web/20200916111817/https://keinmakler.at/kostenlos-inserieren/Sonstiges%20(Miete)">Sonstiges</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <h3>zu verkaufen</h3>
+              <ul>
+                <li>
+                  <a href="/web/20200916111817/https://keinmakler.at/kostenlos-inserieren/Wohnung%20(Kauf)">Wohnung</a>
+                </li>
+                <li>
+                  <a href="/web/20200916111817/https://keinmakler.at/kostenlos-inserieren/Haus%20(Kauf)">Haus</a>
+                </li>
+                <li class="business-tooltip">
+                  <a href="/web/20200916111817/https://keinmakler.at/kostenlos-inserieren/Gewerbeimmobilie%20(Kauf)">Gewerbeimmobilie</a>
+                </li>
+                <li>
+                  <a href="/web/20200916111817/https://keinmakler.at/kostenlos-inserieren/Grundst%C3%BCck%20(Kauf)">Grundstück</a>
+                </li>
+                <li>
+                  <a href="/web/20200916111817/https://keinmakler.at/kostenlos-inserieren/Sonstiges%20(Kauf)">Sonstiges</a>
+                </li>
+              </ul>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <div class="main-navi-section">
+          <div class="user-link-area">
+            <a href="/web/20200916111817/https://keinmakler.at/registrieren" class="login-link header-link register-btn">Registrieren</a> <a href="/web/20200916111817/https://keinmakler.at/einloggen" class="login-link header-link">Login</a>
+          </div><a href="/web/20200916111817/https://keinmakler.at/maklergeschichten" class="header-link realtor-stories-link">Maklergeschichten</a>
+          <div class="about-link-area-position about-link-area layover-active-area">
+            <a href="javascript:void(0);" class="about-link header-link icon-menu">Über keinmakler.at<span class="drop-arrow"></span></a>
+            <div class="layover-wrapper dropdown about-dropdown-menu">
+              <div class="layover clearfix">
+                <div>
+                  Warum keinmakler.at? <a href="/web/20200916111817/https://keinmakler.at/fragen-antworten" class="none">Fragen &amp; Antworten</a> <a href="/web/20200916111817/https://keinmakler.at/newsletter/subscribe" class="none">Newsletter</a>
+                  <div class="bottom-area">
+                    <ul>
+                      <li><span></span>Facebook</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><a href="/web/20200916111817/https://keinmakler.at/merkliste" class="none header-link icon-star watch-list-link"><span>Merkliste</span> <span class="watch-list-count"></span></a>
+        </div>
+      </div>
+      <div class="mobile-menu-button"></div>
+    </div>
+  </div>
+  <div id="search-profiles">
+    <div class="top-border"></div>
+    <p class="search-profiles-headline">Meine&nbsp;Suchen</p>
+    <div id="close-search">
+      <a href="javascript:void(0);"></a>
+    </div>
+    <div class="profiles-blank">
+      <p>Neue Treffer zu deiner Suche per E-Mail erhalten, und einfach zwischen deinen Suchen navigieren.</p>
+      <p class="search-profile-btn"><a href="/web/20200916111817/https://keinmakler.at/registrieren">Jetzt Gratis Account anlegen</a></p>
+    </div>
+  </div>
+  <div id="container" class="list-view-jimmbo show-view-jimmbo">
+    <script type="application/ld+json">
+    {
+        "@context": "http://web.archive.org/web/20200916111817/http://schema.org/",
+        "@type": "Place",
+        "description": "Erstbezug nach hochwertiger, liebevoller Sanierung Aufteilung: • Großes Vorzimmer (m. Nische) • Schlafzimmer • Bad, WC getrennt • Wohnzimmer mit offener Küche • Alle Räume in den Grüninnenhof (Kirs...",
+        "name": "Das geteilte Inserat wurde gelöscht!",
+        "image": "",
+        "address": {
+                "@type": "PostalAddress",
+                "postalCode": "1160",
+                "addressLocality": "Wien",
+                "addressCountry": "AT",
+                "streetAddress": ""
+        }
+    }
+    </script>
+    <div style="display:none;" id="highlight-message"></div>
+    <div class="map-teaser-wrapper">
+      <script type="text/javascript">
+                $(document).ready(function() {
+                        drawAddress(', 1160, Wien, AT');
+                });
+      </script>
+    </div>
+    <div id="map-not-found"></div>
+    <div class="inactive-msg-wrap">
+      <div class="inactive-msg">
+        Dieses Objekt wurde vom Anbieter gelöscht.
+      </div>
+    </div>
+    <div style="min-height: calc(100vh - 400px)"></div>
+  </div>
+  <div id="map-view" class="clearfix" style="display:none;">
+    <div class="shadow"></div>
+    <div class="center-point">
+      <div class="load-map-text"></div>
+      <div class="load-map-animation"></div>
+    </div>
+    <div id="map" style="position: absolute; width:100%; height:100%; left: 0; top: 204px;"></div>
+  </div>
+  <div id="footer-follow-links" style="display:none;">
+    <div id="footer">
+      <div class="footer-inner">
+        <ul>
+          <li class="headline">Über keinmakler.at</li>
+          <li>Warum keinmakler.at</li>
+          <li>
+            <a href="/web/20200916111817/https://keinmakler.at/fragen-antworten" class="none">Fragen &amp; Antworten</a>
+          </li>
+          <li style="position:relative">
+            <div class="new-realty-dropdown" style="display:none">
+              <div class="dropdown-inner">
+                <div class="col">
+                  <h3>zu vermieten</h3>
+                  <ul>
+                    <li>
+                      <a href="/web/20200916111817/https://keinmakler.at/kostenlos-inserieren/Wohnung%20(Miete)">Wohnung</a>
+                    </li>
+                    <li>
+                      <a href="/web/20200916111817/https://keinmakler.at/kostenlos-inserieren/Haus%20(Miete)">Haus</a>
+                    </li>
+                    <li class="business-tooltip">
+                      <a href="/web/20200916111817/https://keinmakler.at/kostenlos-inserieren/Gewerbeimmobilie%20(Miete)">Gewerbeimmobilie</a>
+                    </li>
+                    <li>
+                      <a href="/web/20200916111817/https://keinmakler.at/kostenlos-inserieren/WG-Zimmer%20(Miete)">WG-Zimmer</a>
+                    </li>
+                    <li>
+                      <a href="/web/20200916111817/https://keinmakler.at/kostenlos-inserieren/Sonstiges%20(Miete)">Sonstiges</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3>zu verkaufen</h3>
+                  <ul>
+                    <li>
+                      <a href="/web/20200916111817/https://keinmakler.at/kostenlos-inserieren/Wohnung%20(Kauf)">Wohnung</a>
+                    </li>
+                    <li>
+                      <a href="/web/20200916111817/https://keinmakler.at/kostenlos-inserieren/Haus%20(Kauf)">Haus</a>
+                    </li>
+                    <li class="business-tooltip">
+                      <a href="/web/20200916111817/https://keinmakler.at/kostenlos-inserieren/Gewerbeimmobilie%20(Kauf)">Gewerbeimmobilie</a>
+                    </li>
+                    <li>
+                      <a href="/web/20200916111817/https://keinmakler.at/kostenlos-inserieren/Grundst%C3%BCck%20(Kauf)">Grundstück</a>
+                    </li>
+                    <li>
+                      <a href="/web/20200916111817/https://keinmakler.at/kostenlos-inserieren/Sonstiges%20(Kauf)">Sonstiges</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </div><a href="javascript:void(0);" class="open-new-realty-dropdown">Gratis inserieren</a> 
+            <script>
+
+
+                                        $(document).ready(function() {
+                                                $("#footer .open-new-realty-dropdown").click(function() {
+                                                        $("#footer .new-realty-dropdown").toggle();
+                                                });
+                                                $("#footer .new-realty-dropdown").click(function() {
+                                                        $(this).toggle();
+                                                });
+                                                
+                                                $("body").click(function(e) {
+                                                        if ($(e.target).closest($("#footer .open-new-realty-dropdown")).length)
+                                                        return;
+                                                        if (!$(e.target).closest($("#footer .new-realty-dropdown")).length)
+                                                        $("#footer .new-realty-dropdown").hide();
+                                                });
+                                        });
+            </script>
+          </li>
+        </ul>
+        <ul>
+          <li class="headline">Weitere Informationen</li>
+          <li>
+            <a href="/web/20200916111817/https://keinmakler.at/agb" class="none">AGB</a>
+          </li>
+          <li>
+            <a href="/web/20200916111817/https://keinmakler.at/datenschutz" class="none">Datenschutz</a>
+          </li>
+          <li>
+            <a href="/web/20200916111817/https://keinmakler.at/impressum" class="none">Impressum</a>
+          </li>
+        </ul>
+        <ul class="last">
+          <li class="headline">Bleib am Laufenden</li>
+          <li>
+            <a href="/web/20200916111817/https://keinmakler.at/newsletter/subscribe" class="icon-newsletter">Newsletter</a>
+          </li>
+          <li>Facebook</li>
+        </ul>
+        <div class="button-box"></div>
+        <p class="bottom-text">© 2020 keinmakler.at<br>
+        Alle Rechte vorbehalten.</p>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+        // Hide footer instantly on search-page
+        if (!document.getElementById('no-results') && !document.getElementById('offers'))
+                document.getElementById('footer-follow-links').style.display = 'block';
+  </script>
+  <div class="cookiebar" id="cookiebar" style="display:none">
+    <div class="cookiebar-text">
+      Durch die Nutzung unserer Angebote erklären Sie sich mit dem Setzen von Cookies einverstanden. <a href="/web/20200916111817/https://keinmakler.at/datenschutz#cookies">Details ansehen</a>
+    </div><button class="cookiebar-btn" id="cookiebar-btn">Zustimmen</button>
+  </div>
+  <div id="infinite-waypoint" style="height:1px;width:100%;display:block;"></div>
+</body>
+</html>
